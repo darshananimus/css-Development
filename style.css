@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-uppercase
+{
+    text-transform: uppercase;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 2px 5px rgba(0,0,0,.1);
+}
+.navbar-brand
+{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    align-self: center;
+    font-family: 'Merriweather', serif;
+    color: black;
+
+}
+.hamburger
+{
+    color: black;
+    background-color: transparent;
+    border: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    
+}
+.hamburger:focus{
+    outline: none;
+}
+.navbar-nav
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+.nav-link:hover{
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    text-underline-position: under;
+    
+}
+.nav-items
+{
+    padding: 0.5rem;
+}
+.nav-link
+{
+    text-decoration: none;
+    justify-content: space-between;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+hr{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .navbar-nav{
+        display: none;
+    }
+    .navbar-nav.show
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+    }
+    
+    
+    .hamburger
+    {
+        display: block;
+        padding: 1rem;
+
+    }
+    
+}
